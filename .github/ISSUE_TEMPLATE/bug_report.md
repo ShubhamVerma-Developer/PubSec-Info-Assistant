@@ -42,7 +42,7 @@ Please provide the following details. You can simply include a screenshot of you
 >
 >model name: (i.e. gpt-3.5-turbo, gpt-4)
 >
->model version: (i.e. 0613)
+>model version: (i.e. 0301)
 >
 >What embeddings model are you using?
 

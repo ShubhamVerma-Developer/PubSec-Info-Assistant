@@ -87,11 +87,11 @@ For a detailed review see our [Features](./docs/features/features.md) page.
     Model Name | Supported Versions
     ---|---
     gpt-35-turbo | current version
-    **gpt-35-turbo-16k** | current version
+    **gpt-35-turbo** | current version
     **gpt-4** | current version
     gpt-4-32k | current version
 
-    **Important:** Gpt-35-turbo-16k (0613) is recommended. GPT 4 models may achieve better results from the IA Accelerator.
+    **Important:** gpt-35-turbo (0301) is recommended. GPT 4 models may achieve better results from the IA Accelerator.
   * (Optional) **Access to the following Azure OpenAI model for embeddings**. Some open source embedding models may perform better for your specific data or use case. For the use case and data Information Assistant was tested for we recommend using the following Azure OpenAI embedding model.
 
     Model Name | Supported Versions

@@ -22,7 +22,7 @@ locals {
   }
   locations = [
     {
-      locationName     = var.location
+      locationName     = "centralindia"
       failoverPriority = 0
       isZoneRedundant  = false
     }
@@ -33,7 +33,7 @@ locals {
 
 resource "azurerm_cosmosdb_account" "cosmosdb_account" {
   name                = lower(var.name)
-  location            = var.location
+  location            = "centralindia"
   resource_group_name = var.resourceGroupName
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
@@ -45,7 +45,7 @@ resource "azurerm_cosmosdb_account" "cosmosdb_account" {
   }
 
   geo_location {
-    location          = var.location
+    location          = "centralindia"
     failover_priority = 0
   }
 
