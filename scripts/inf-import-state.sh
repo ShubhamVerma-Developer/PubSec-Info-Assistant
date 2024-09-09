@@ -386,7 +386,7 @@ module_path="module.kvModule.azurerm_key_vault_secret.spClientKeySecret"
 import_resource_if_needed "$module_path" "$secret_id"
 current_user_id=$(az ad signed-in-user show --query id -o tsv)
 providers="/providers/Microsoft.KeyVault/vaults/$keyVaultId/objectId/$current_user_id"
-module_path="module.kvModule.azurerm_key_vault_access_policy.infoasst"
+module_path="module.kvModule.azurerm_key_vault_access_policy.infoasst1"
 import_resource_if_needed "$module_path" "$resourceId$providers"
 
 

@@ -13,7 +13,7 @@ resource "azurerm_key_vault" "kv" {
 }
 
  
-resource "azurerm_key_vault_access_policy" "infoasst" {
+resource "azurerm_key_vault_access_policy" "infoasst1" {
   depends_on  = [
     azurerm_key_vault.kv
   ]
@@ -34,7 +34,7 @@ resource "azurerm_key_vault_access_policy" "infoasst" {
 
 resource "azurerm_key_vault_secret" "spClientKeySecret" {
   depends_on  = [
-    azurerm_key_vault_access_policy.infoasst,
+    azurerm_key_vault_access_policy.infoasst1,
     azurerm_key_vault.kv
   ]
   name         = "AZURE-CLIENT-SECRET"
