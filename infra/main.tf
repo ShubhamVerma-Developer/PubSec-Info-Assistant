@@ -192,7 +192,7 @@ module "backend" {
 module "openaiServices" {
   source = "./core/ai/openaiservices"
   name     = var.openAIServiceName != "" ? var.openAIServiceName : "infoasst-aoai-${random_string.random.result}"
-  location = var.location
+  location = "eastus"
   tags     = local.tags
   resourceGroupName = azurerm_resource_group.rg.name
   keyVaultId = module.kvModule.keyVaultId
@@ -205,7 +205,7 @@ module "openaiServices" {
       model = {
         format = "OpenAI"
         name = var.chatGptModelName != "" ? var.chatGptModelName : "gpt-35-turbo"
-        version = var.chatGptModelVersion != "" ? var.chatGptModelVersion : "0301"
+        version = var.chatGptModelVersion != "" ? var.chatGptModelVersion : "2024-05-13"
       }
       sku_name = "Standard"
       sku_capacity = var.chatGptDeploymentCapacity

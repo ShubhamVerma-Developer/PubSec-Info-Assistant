@@ -357,12 +357,12 @@ variable "chatGptModelName" {
 
 variable "chatGptModelVersion" {
   type    = string
-  default = "0301"
+  default = "2024-05-13"
 }
 
 variable "chatGptDeploymentCapacity" {
   type    = number
-  default = 240
+  default = 150
 }
 
 variable "chunkTargetSize" {
